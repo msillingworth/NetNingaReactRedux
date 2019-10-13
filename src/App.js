@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Ninja from './ninja';
 import AddNinja from './AddNinja';
+import Table from './Table';
 
 class App extends Component {
   state = {
@@ -25,6 +26,7 @@ class App extends Component {
         <h1>Leading Ninja Warriors</h1>
         <Ninja ninjas={this.state.ninjas} />
         <AddNinja />
+        <Table />
       </div>
     );
   }
